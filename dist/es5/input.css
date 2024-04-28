@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-rose-300 text-sm;
+  }
+  p {
+    @apply text-base;
+  }
+  h1 {
+    @apply text-lg font-medium tracking-tight;
+  }
+  input {
+    @apply text-lg block w-full border-b pb-3 focus:outline-none;
+  }
+  button {
+    @apply text-lg bg-black text-white font-medium px-4 py-2 rounded-full;
+  }
+}
+
+@layer components {
+  .card {
+    @apply p-8 w-full min-h-72 rounded-2xl bg-white hover:shadow-xl hover:shadow-neutral-300/15 transition duration=200ms;
+  }
+}

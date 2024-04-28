@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web Zeva</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    />
+  </head>
+  <body>
+    <header class="flex justify-between items-center p-16">
+      <div
+        class="font-bold text-3xl bg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent tracking-tight"
+      >
+        Zevano
+      </div>
+      <div class="flex gap-4 bg-neutral-200 px-4 py-2 rounded-full">
+        <div
+          class="bg bg-white shadow-lg shadow-neutral-300 px-5 py-2 rounded-full"
+        >
+          All
+        </div>
+        <div class="px-5 py-2">About</div>
+        <div class="px-5 py-2">Project</div>
+        <div class="px-5 py-2">Media</div>
+      </div>
+      <div>Contact</div>
+    </header>
+
+    <main class="w-[1200px]] m-auto grid grid-cols-4 grid-rows-4 gap-6">
+      <!-- Content 1 -->
+      <div class="card flex-col justify-end relative col-span-2">
+        <div class="absolute top-4 right-4 border px-4 py-2 rounded-full w-fit">
+          Available for works
+        </div>
+        <img src="assets/user.webp" width="160" height="160" />
+        <p>
+          Hello I am Zevano, currently work as Fullstack, so I am stuck everyday
+          because I am more full snack instead of full stack.
+        </p>
+      </div>
+
+      <!-- Content 2 -->
+      <div class="relative card bg-black flex justify-center items-center">
+        <img src="assets/twitter.png" width="160" height="160" />
+        <a target="_blank" href="https://twitter.com/zeva_herutomo14"></a>>
+        <div
+          class="absolute left-4 bottom-4 text-black bg-white rounded-full p-1 hover:ring-slate-400 transition duration-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Content 3 -->
+      <div
+        class="card p-1 row-span-2 overflow-hidden"
+        style="background-image: url(assets/vouch-for-bg.svg)"
+      >
+        <img
+          src="assets/vouch-for.png"
+          width="400px"
+          height="600px"
+          class="absolute right-[0.25px]"
+        />
+        <a target="_blank" href="https://twitter.com/zeva_herutomo14"></a>>
+        <div
+          class="absolute overflow-hidden w-[32px] hover:w-[100px] flex justify-end items-center gap-1 left-4 bottom-4 text-black bg-white rounded-full py-1 px-1 hover:px-3 hover:ring-slate-400 transition-all duration-200"
+        >
+          <p
+            class="absolute opacity-0 group-hover:opacity-100 -left-16 group-hover:left-2 transition-all duration-300 text-sm"
+          >
+            Portofolio
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Content 4 -->
+      <div class="card"></div>
+
+      <!-- Content 5 -->
+      <div class="card"></div>
+
+      <!-- Content 6 -->
+      <div class="card"></div>
+
+      <!-- Content email -->
+      <div class="card col-span-2 flex flex-col justify-between">
+        <div>
+          <h1>Shall I keep you in the loop?</h1>
+          <p>I'll share you some of my snacks!</p>
+        </div>
+        <input id="email" placeholder="yours@email.com" />
+        <button id="subscribeBtn">Subscribe me!</button>
+      </div>
+    </main>
+
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
